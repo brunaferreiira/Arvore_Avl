@@ -288,52 +288,52 @@ void listar (Noh *noh) {
 		return;
 }
 
-int main(){
-	DicAVL arvore;
-	inicializar(arvore);
-	int op;
-	TC chave;
-	TV valor;
+// int main(){
+// 	DicAVL arvore;
+// 	inicializar(arvore);
+// 	int op;
+// 	TC chave;
+// 	TV valor;
 
-	for (;;) {
-		cout << "\n 0-Sair; \n 1-Inserir;\n 2-Listar;\n 3-Remover;\n 4-Procurar;\n 5-Terminar\nOpcao: ";
-		cin >> op;
-		if (op==0) {
-			break;
-		}
-		else if (op==1) {
-			cout << "Insira o valor";
-			cin >> valor;
-			cout << "Insira a chave";
-			cin >> chave;
-			inserir(arvore,chave,valor);
+// 	for (;;) {
+// 		cout << "\n 0-Sair; \n 1-Inserir;\n 2-Listar;\n 3-Remover;\n 4-Procurar;\n 5-Terminar\nOpcao: ";
+// 		cin >> op;
+// 		if (op==0) {
+// 			break;
+// 		}
+// 		else if (op==1) {
+// 			cout << "Insira o valor";
+// 			cin >> valor;
+// 			cout << "Insira a chave";
+// 			cin >> chave;
+// 			inserir(arvore,chave,valor);
 				
-		}
-		else if (op==2) {
-			if (arvore.raiz==nullptr) {
-				cout << "Árvore vazia!";
-			}
-			else {
-				cout << endl;
-				listar(arvore.raiz);
-				cout << endl;
-			}
-		}
-		else if (op==3) {
-			cout << "Insira a chave que deseja remover";
-			cin >> chave;
-			remover(arvore, procurar(arvore,chave));
-		}
-		else if (op==4) {
-			cout << "Insira a chave do elemento que deseja procurar";
-			cin >> chave;
-			Noh* nohBusca = procurar(arvore,chave);
-			cout << "chave: " << nohBusca->chave << " valor:" << nohBusca->valor << " altura: "<< altura(*nohBusca);
-		}
-		else if (op==5) {
-			terminar(arvore);
+// 		}
+// 		else if (op==2) {
+// 			if (arvore.raiz==nullptr) {
+// 				cout << "Árvore vazia!";
+// 			}
+// 			else {
+// 				cout << endl;
+// 				listar(arvore.raiz);
+// 				cout << endl;
+// 			}
+// 		}
+// 		else if (op==3) {
+// 			cout << "Insira a chave que deseja remover";
+// 			cin >> chave;
+// 			remover(arvore, procurar(arvore,chave));
+// 		}
+// 		else if (op==4) {
+// 			cout << "Insira a chave do elemento que deseja procurar";
+// 			cin >> chave;
+// 			Noh* nohBusca = procurar(arvore,chave);
+// 			cout << "chave: " << nohBusca->chave << " valor:" << nohBusca->valor << " altura: "<< altura(*nohBusca);
+// 		}
+// 		else if (op==5) {
+// 			terminar(arvore);
 
-		}
-	}
-	return 0;
-	}
+// 		}
+// 	}
+// 	return 0;
+// 	}
